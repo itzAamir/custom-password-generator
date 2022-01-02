@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background: #000000e1;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 16px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.form-container {
+	width: 24rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+#password-output {
+	padding: 5px;
+	font-size: 1.1em;
+	width: 100%;
+	outline: none;
+}
+
+#password-output ~ button {
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+#pass_size {
+	padding: 2px;
+	width: 3rem;
+}
+
+table {
+	margin-top: 1rem;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+td:nth-child(even) {
+	text-align: center;
+}
+
+#generate_btn {
+	padding: 0.5rem;
+	width: 100%;
+	border: 1px solid #dddddd;
+	background: none;
+	color: white;
+	cursor: pointer;
+	transition: all ease 300ms;
+}
+
+#generate_btn:hover {
+	background: #dddddd;
+	color: black;
+}

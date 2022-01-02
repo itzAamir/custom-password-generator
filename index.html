@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Password Genertor</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Password Generator</h1>
+			<div class="form-container">
+				<div class="form-top">
+					<input type="text" id="password-output" />
+					<button id="copy-btn">Copy</button>
+				</div>
+
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<label for="pass_size">Password size</label>
+							</td>
+							<td>
+								<input
+									type="number"
+									id="pass_size"
+									min="0"
+									max="25"
+									value="10"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="incUp">Include Uppercase</label>
+							</td>
+							<td>
+								<input type="checkbox" id="incUp" name="CAPITAL_LETTERS" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="incNum">Include Numbers</label>
+							</td>
+							<td>
+								<input type="checkbox" id="incNum" name="NUMBERS" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="incSp">Include Special Characters</label>
+							</td>
+							<td>
+								<input type="checkbox" id="incSp" name="SPECIAL_CHARS" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<button id="generate_btn">Generate</button>
+			</div>
+		</main>
+		<script src="./script.js"></script>
+	</body>
+</html>
